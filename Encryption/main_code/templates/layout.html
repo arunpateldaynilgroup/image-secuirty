@@ -96,17 +96,6 @@
     blink-caret .75s step-end infinite;
 }
 
-/*.typewriter h3{
-  transition-delay: 5s;
-  overflow: hidden; 
-  border-right: .15em solid orange;
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}*/
 .jumbotron h1 {
     text-align: center;
     font-family: 'Press Start 2P', cursive;
@@ -149,13 +138,13 @@ p {
                 </button>
                 
                 <a href="/" class="navbar-brand">
-<img border="0" alt="Homepage" src="..\static\content\logo.png" width="50" height="50"></a>
+                <img border="0" alt="Homepage" src="..\static\content\logo.png" width="50" height="50"></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" style="font-family: 'Orbitron', sans-serif;padding-bottom: 1%;padding-top:1%;">
                   
-                    <li><a class="link link--kukuri" href="{{ url_for('about') }}" data-letters="ENCRYPTION">Encryption</a></li>
-                    <li><a class="link link--kukuri" href="{{ url_for('contact') }}" data-letters="DECRYPTION" style="padding-left: 5%">Decryption</a>
+                    <li><a class="link link--kukuri" href="{{ url_for('encryption') }}" data-letters="ENCRYPTION">Encryption</a></li>
+                    <li><a class="link link--kukuri" href="http://localhost:9090/decryption" data-letters="DECRYPTION" style="padding-left: 5%">Decryption</a>
                 </ul>
             </div>
         </div>
